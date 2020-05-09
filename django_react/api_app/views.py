@@ -15,7 +15,7 @@ def apiOverview(request):
         'Delete'    : '/task-delete/<str:pk>',
 
     }
-    return Response(api_urls)
+    return Response(api_urls)   
 
 from .models import Task 
 from .serializers import TaskSerializer
